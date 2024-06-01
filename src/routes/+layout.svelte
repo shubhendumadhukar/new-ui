@@ -1,7 +1,9 @@
 <script>
   import "../app.css";
+  import { Toaster } from "$lib/components/ui/sonner";
+  import { ModeWatcher } from "mode-watcher";
 </script>
 
-<slot></slot>
-
-<style></style>
+<ModeWatcher defaultMode={"light"} />
+<Toaster />
+<slot />

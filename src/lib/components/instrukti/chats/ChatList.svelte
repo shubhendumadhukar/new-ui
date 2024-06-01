@@ -4,12 +4,11 @@
   import { Input } from "$lib/components/ui/input";
   import { ScrollArea } from "$lib/components/ui/scroll-area";
   import { Button } from "$lib/components/ui/button";
-  import Drawer from "./Drawer.svelte";
+  import Drawer from "../Drawer.svelte";
   import ChatCard from "./ChatCard.svelte";
   import { mails } from "@/stores/mailStore";
-  import { mediaQuery } from "svelte-legos";
   import ChatCardMobile from "./ChatCardMobile.svelte";
-  const isDesktop = mediaQuery("(min-width: 1024px)");
+  import { isDesktop } from "@/stores/isDesktop";
 </script>
 
 <div class="flex flex-col h-[100dvh]">
